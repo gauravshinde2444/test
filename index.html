@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+ 
+
+ <title>BMI </title>
+<script type = "text/javascript">
+ 
+    function BMICalculate()
+     
+    {
+    var weight = document.getElementById('weight').value;
+    var height = document.getElementById('heightft').value;
+     
+     
+    BMI.innerHTML = Math.round((weight /(height*height*.0001)));
+      }
+     
+
+   
+</script>
+ </head>
+ <body>     
+     <div>      
+                         <form action="" name="bmiForm" method="post"  id="contactForm">
+                             <fieldset>
+                               <div >
+                                      <label> Enter your weight (in kgs): <span> (required)</span></label>
+                                      <input type="number"  id="weight" placeholder = "60" required />
+                                </div>
+                                <br>
+                                <div>                                     
+									                   <label> Enter your height (in cms): <span> (required)</span></label>
+                                     <input  type="number" id="heightft" placeholder = "150" required />        
+									              </div>
+                                <br>
+                                <div>
+                                         
+										                 <input type="button"  value="CALCULATE" onClick="BMICalculate()"/> 
+                                </div>
+                                <br>
+ </br>
+ <br><br>
+                                     <div>
+                                        BMI: <label id="BMI" "></label>
+                                     </div>
+
+                                     
+                             </fieldset>
+                         </form>               
+ </div>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
